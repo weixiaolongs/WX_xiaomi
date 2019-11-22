@@ -1,0 +1,34 @@
+<!-- 如果有数据 -->
+<block wx:if="{{cartList.length > 0 }}">
+    <scroll-view scroll-y class="cart-scroll">
+    <checkbox-group bindchange="bindchange">
+     <view class="cart-item" wx:for="{{cartList}}" wx:key="index">
+        <!-- 左 -->
+        <view class="left">
+           <checkbox checked="{{item.isSelect}}" value="{{item.id}}"></checkbox>
+        </view>
+
+        <!-- 中 -->
+        <view class="center">
+           <image src="{{item.imageUrl}}"></image>
+           <text>{{item.title}}</text>
+        </view>
+
+        <!-- 右 -->
+        <view class="right">
+            <text>{{item.counts}} x </text>
+            <text> {{item.price}} 元</text>
+        </view>
+     </view>
+     </checkbox-group>
+  </scroll-view>
+  <!-- 购物车底部accountbar组件 -->
+  <account-bar bind:checkboxchange="accountBarClick" id="accountbar" summary="{{summary}}">
+  </account-bar>
+</block>
+
+<!-- 如果购物车没有数据 -->
+<block wx:else>
+  <import src="../../components/templates/nullcart.wxml" />
+  <template is="nullcart" data="{{btnclick:'goToShop'}}" />
+</block>

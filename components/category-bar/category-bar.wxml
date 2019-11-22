@@ -1,0 +1,9 @@
+
+<view class="category">
+  <block wx:for="{{array}}" wx:key="index">
+    <view class="category-item">
+      <image  src='{{item.imageUrl}}' ></image>
+      <text >{{item.name}}</text>
+    </view>
+  </block>
+</view>

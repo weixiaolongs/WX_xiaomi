@@ -1,0 +1,51 @@
+.accountbar{
+  height: 120rpx;
+  width: 100%;
+  background: white;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 2rpx;
+  border-top: 2rpx solid #dddddd;
+  display: flex;
+  flex-direction: row;
+}
+
+.left{
+  flex:1;
+  /* background: pink; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+
+.left checkbox{
+  transform: scale(0.8,0.8);
+}
+
+.center{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+.center text:nth-of-type(2){
+  color: #ff6802;
+  font-size: 34rpx;
+}
+
+.right{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #ff6802;
+  color: white;
+  font-size: 34rpx;
+}

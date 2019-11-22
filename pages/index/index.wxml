@@ -1,0 +1,18 @@
+<navigator class="view-search" url="../search/search">
+  <view class="view-search-bg">
+    <image src="../../image/icon/search_icon.png" class="image-search"></image>
+    <text class="text-title">搜索商品</text>
+  </view>
+</navigator>
+<!-- swipe -->
+<swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="3000" duration="600" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{homeBean.banners}}" wx:key="index" class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item">
+      <image src="{{item}}" mode="aspectFill"></image>
+    </view>
+  </swiper-item>
+</swiper>
+<!-- 分页 -->
+<category-bar array="{{homeBean.tabBars}}"/>
+<!--商品列表  -->
+<goods-list array="{{goodslist}}"/>

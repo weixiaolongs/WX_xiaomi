@@ -1,0 +1,25 @@
+/* components/category-bar/category-bar.wxss */
+.category{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.category-item{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-item image{
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.category-item text{
+  color: grey;
+  font-size: 30rpx;
+}

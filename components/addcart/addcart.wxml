@@ -1,0 +1,16 @@
+<view class="addcart">
+
+    <!-- 左 -->
+    <view class="left" bindtap="jumpcart">
+      <image class="cart" src="../../image/icon/car_icon_nor.png"></image>
+    </view>
+    <!-- 中 -->
+    <view class="center" bindtap="addcart">
+      加购物车
+    </view>
+    <!-- 右 -->
+    <view class="right">
+      立即购买
+    </view>
+
+</view>

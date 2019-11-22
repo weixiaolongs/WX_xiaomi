@@ -1,0 +1,18 @@
+.new{
+  width: 100%;
+  margin: 20rpx 0;
+}
+
+.new-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 20rpx 0;
+}
+
+.new-item image{
+  width: 90%;
+  border-radius: 20rpx;
+}

@@ -1,0 +1,13 @@
+<!--商品列表  -->
+ <view class="goods-list">
+       <block wx:for="{{array}}" wx:key="id" wx:for-item="goods">
+         <navigator url="../../pages/detail/detail?id={{goods.id}}" class="goods-item">
+           <image src="{{goods.imageUrl}}"></image>
+            <view class="goods-desp" >
+                    <view class="text-title">{{goods.title}}</view>
+                    <view class="text-desp">{{goods.descp}}</view>
+                    <view class="text-price">¥{{goods.price}}</view>
+            </view>
+         </navigator>
+      </block>
+    </view>

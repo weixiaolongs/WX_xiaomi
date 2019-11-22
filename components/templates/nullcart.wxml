@@ -1,0 +1,9 @@
+<template name="nullcart">
+  <view class="nullcart">
+      <view class="cart-logo">
+        <image src="../../image/icon/car_icon_nor.png"></image>
+      </view>
+      <view class="cart-desp">购物车还是空的</view>
+      <navigator url='../index/index' open-type='switchTab' class="cart-btn">到小米商城逛逛</navigator>
+  </view>
+</template>

@@ -1,0 +1,41 @@
+<block wx:if="{{detailId}}">
+  <!-- 可滚动区域 -->
+  <scroll-view class="scroll-view" scroll-y>
+    <swiper indicator-active-color="#fff" indicator-dots class="swiper-class"
+    circular="true"
+    >
+      <swiper-item wx:for="{{detailId.bannersArr}}" wx:key="index">
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </swiper>
+    <!--商品的介绍-->
+    <view class="goods-info">
+      <view>{{detailId.title}}</view>
+      <view>{{detailId.descp}}</view>
+      <view>{{detailId.price}}元</view>
+    </view>
+    <!-- 详情页 -->
+    <tab-bar 
+      bind:tabtab="tabFunction"
+      tabs="{{tabs}}"
+      bindtabclick="tabclick"
+      tabs-active-text-class="tabs-active-color"
+      />
+      
+      <view wx:if="{{currentIndex==0}}" >
+      <image wx:for="{{detailId.detailpicsArr}}" src="{{item}}" wx:key="index" style="width:100%" 
+       mode="widthFix"></image>
+      </view>
+      <view wx:else>相关信息详情页</view>
+  </scroll-view>
+  <!-- 购物车 -->
+  <addcart bind:addCartFn="addcartfn"/>
+  <button wx:if="{{userInfo==null}}" class="btn-transparent" open-type="getUserInfo" bindgetuserinfo="getUserInfo"></button>
+</block>
+<block wx:else>
+  <view class='cu-load load-modal' wx:if="{{loadModal}}">
+    <!-- <view class='cuIcon-emojifill text-orange'></view> -->
+    <image src='../../image/icon/logo.png' class='png' mode='aspectFit'></image>
+    <view class='gray-text'>加载中...</view>
+  </view>
+</block>

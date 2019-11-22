@@ -1,0 +1,14 @@
+<template name="authorized">
+  <view class="authorized">
+    <open-data type="userAvatarUrl" class="head-style"></open-data>
+    <view class="line"></view>
+    <view class="content">
+      该小程序由小米商城进行开发，请提供以下授权信息，即可继续操作
+    </view>
+    <view class="desc">
+      <text class="dot"></text>
+      <text class="info">获得你的公开信息（昵称，头像等）</text>
+    </view>
+    <button open-type='getUserInfo' class='authorized-btn' bindgetuserinfo='getUserInfo' lang="zh_CN">确认授权</button>
+  </view>
+</template>

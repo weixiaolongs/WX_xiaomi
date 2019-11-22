@@ -1,0 +1,38 @@
+.goods-list{
+  box-sizing: border-box;
+  margin-bottom: 0
+}
+.goods-item{
+  display: inline-block;
+  width: 50%;
+  height: 560rpx;
+  border-bottom: 4rpx solid white;
+  box-sizing: border-box;
+  
+}
+
+.goods-item:nth-of-type(odd){
+  border-right: 4rpx solid white;
+}
+.goods-item image{
+  width: 100%;
+  height: 350rpx;
+}
+.goods-desp{
+  margin-left: 20rpx;
+}
+
+.text-title{
+  font-size: 36rpx;
+}
+
+.text-desp{
+  font-size: 26rpx;
+  color: gray;
+  margin: 10rpx 0rpx;
+}
+
+.text-price{
+  font-size: 32rpx;
+  color: #FF6802;
+}

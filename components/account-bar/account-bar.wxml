@@ -1,0 +1,25 @@
+
+<view class="accountbar">
+
+  <!-- 左 -->
+  <view class="left">
+	 <!-- 1.监听选中和没有选中的事件 -->	    
+      <checkbox-group bindchange="bindSelectAll">
+        	<!--  value="selectAll" 点击的时候可以获取这个值;  checked:代码修改选中状态   -->	 
+          <checkbox value="checked" checked="{{isSelect}}" class="cuIcon-squarecheckfill lg text-gray">全选</checkbox>
+      </checkbox-group>
+  </view>
+  
+  <!-- 中 -->
+  <view class="center">
+    <text>合计：</text>
+    <text>{{summary}}元</text>
+  </view>
+
+  <!-- 右 -->
+  <!-- 2.监听结算的点击事件 -->
+  <view class="right" bindtap="bindAccount">
+    <text>结算:( {{summary}} )</text>
+  </view>
+
+</view>

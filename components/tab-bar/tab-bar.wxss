@@ -1,0 +1,25 @@
+/* components/tab-bar/tab-bar.wxss */
+.tabs{
+  height: 110rpx;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20rpx;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.tabs-item{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-size: 36rpx;
+  color: gray;
+}
+
+
+.tabs-item:nth-of-type(1){
+  border-right: 2rpx solid #ddd;
+}

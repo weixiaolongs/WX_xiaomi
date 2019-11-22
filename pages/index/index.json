@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "category-bar":"../../components/category-bar/category-bar",
+    "goods-list":"../../components/goods-list/goods-list"
+  }
+}

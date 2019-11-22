@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/find/find",
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/detail/detail",
+    "pages/order/order",
+    "pages/category/category"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FF6802",
+    "navigationBarTitleText": "小米商城",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#FF6802",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/icon/home_icon_nor.png",
+        "selectedIconPath": "image/icon/home_icon_press.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "image/icon/cate_icon_nor.png",
+        "selectedIconPath": "image/icon/cate_icon_press.png"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "text": "发现",
+        "iconPath": "image/icon/find_icon_nor.png",
+        "selectedIconPath": "image/icon/find_icon_press.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "image/icon/car_icon_nor.png",
+        "selectedIconPath": "image/icon/car_icon_press.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/icon/mine_icon_nor.png",
+        "selectedIconPath": "image/icon/mine_icon_press.png"
+      }
+    ]
+  }
+}

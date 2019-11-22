@@ -1,0 +1,8 @@
+<view class='new'>
+    <block wx:for="{{newBean}}" wx:key="index">
+      <view class='new-item'>
+        <image src='{{item.imageUrl}}'></image>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+</view>

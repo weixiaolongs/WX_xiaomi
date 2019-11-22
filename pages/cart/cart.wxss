@@ -1,0 +1,53 @@
+/* pages/cart/cart.wxss */
+@import '../../components/templates/nullcart.wxss'
+/* 购物车滚动列表 */
+.cart-scroll{
+  height: calc(100% - 120rpx);
+}
+
+.cart-item{
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-bottom: 2rpx solid #ddd;
+
+}
+
+.cart-item .left{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item .left checkbox{
+  transform: scale(0.8,0.8);
+}
+
+.cart-item .center{
+  flex:5;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cart-item .center image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx;
+
+}
+
+.cart-item .right{
+  flex:2;
+  display: flex;
+  align-items: center;
+}
+
+
+.cart-item .right text:nth-of-type(2){
+    color: #ff6802;
+    margin-left: 10rpx;
+}

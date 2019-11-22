@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "addcart":"../../components/addcart/addcart",
+    "tab-bar":"../../components/tab-bar/tab-bar"
+  }
+}

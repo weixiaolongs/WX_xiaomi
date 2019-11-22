@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "account-bar":"../../components/account-bar/account-bar"
+  }
+}
